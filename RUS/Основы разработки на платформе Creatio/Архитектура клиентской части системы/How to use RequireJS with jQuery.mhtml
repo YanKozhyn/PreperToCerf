@@ -1,0 +1,1124 @@
+From: <Saved by Blink>
+Snapshot-Content-Location: https://requirejs.org/docs/jquery.html
+Subject: How to use RequireJS with jQuery
+Date: Mon, 9 Jan 2023 14:26:10 -0000
+MIME-Version: 1.0
+Content-Type: multipart/related;
+	type="text/html";
+	boundary="----MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----"
+
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: text/html
+Content-ID: <frame-6C224AA5B238D55212C08DB68CF7528C@mhtml.blink>
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://requirejs.org/docs/jquery.html
+
+<!DOCTYPE html><html><head><meta http-equiv=3D"Content-Type" content=3D"tex=
+t/html; charset=3DUTF-8">
+    <title>How to use RequireJS with jQuery</title>
+
+    <meta name=3D"viewport" content=3D"width=3Ddevice-width, initial-scale=
+=3D1">
+    <meta http-equiv=3D"X-UA-Compatible" content=3D"chrome=3D1">
+
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://requirejs.or=
+g/main.css">
+    <link rel=3D"icon" type=3D"image/x-icon" href=3D"https://requirejs.org/=
+favicon.png">
+    <!--[if IE]> <link rel=3D"stylesheet" type=3D"text/css" href=3D"../ie.c=
+ss" /> <![endif]-->
+    <link rel=3D"stylesheet" type=3D"text/css" href=3D"https://ajax.googlea=
+pis.com/ajax/libs/dojo/1.4/dojox/highlight/resources/highlight.css">
+
+   =20
+   =20
+   =20
+   =20
+</head>
+<body>
+<div id=3D"grid" style=3D"display: none; min-height: 904px;"></div>
+<div id=3D"wrapper" style=3D"min-height: 904px;">
+
+    <div id=3D"navBg" style=3D"min-height: 904px;"></div>
+    <button type=3D"button" role=3D"button" aria-label=3D"Toggle Navigation=
+" class=3D"off-canvas-button">
+      <span class=3D"lines">
+        <span class=3D"line">&nbsp;</span>
+        <span class=3D"line">&nbsp;</span>
+        <span class=3D"line">&nbsp;</span>
+      </span>
+      <span class=3D"cross">=C3=97</span>
+    </button>
+    <div id=3D"nav" class=3D"mono" style=3D"position: fixed;">
+        <a class=3D"homeImageLink" href=3D"https://requirejs.org/"></a>
+        <h1>a javascript module loader</h1>
+
+        <ul>
+            <li class=3D"hbox">
+                <a href=3D"https://requirejs.org/">Home</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon home"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/start=
+.html">Start</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon start"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/downl=
+oad.html">Download</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon download"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/api.h=
+tml">API</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon api"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/optim=
+ization.html">Optimization</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon optimize"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/jquer=
+y.html">Use with jQuery</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon script"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/node.=
+html">Use with Node</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon script"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/dojo.=
+html">Use with Dojo</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon script"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/commo=
+njs.html">CommonJS Notes</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon script"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/faq.h=
+tml">FAQs</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon question"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/error=
+s.html">Common Errors</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon question"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/plugi=
+ns.html">Writing Plugins</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon api"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/why.h=
+tml">Why Web Modules</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon question"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/whyam=
+d.html">Why AMD</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon question"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/requi=
+rements.html">Requirements</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon requirement"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/histo=
+ry.html">History</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon history"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li class=3D"hbox">
+                <a href=3D"https://stackoverflow.com/questions/tagged/requi=
+rejs">Get Help</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon help"></span>
+            </li>
+            <li class=3D"hbox">
+                <a href=3D"https://jrburke.com/">Blog</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon blog"></span>
+            </li>
+            <li class=3D"hbox">
+                <a href=3D"https://twitter.com/jrburke">Twitter</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon twitter"></span>
+            </li>
+        </ul>
+
+        <ul>
+            <li class=3D"hbox">
+                <a href=3D"https://github.com/requirejs/requirejs">GitHub</=
+a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon git"></span>
+            </li>
+            <li class=3D"hbox">
+                <a class=3D"local" href=3D"https://requirejs.org/docs/contr=
+ibuting.html">Contributing</a>
+                <span class=3D"spacer boxFlex"></span>
+                <span class=3D"icon fork"></span>
+            </li>
+        </ul>
+
+
+        <ul>
+            <li class=3D"version">2.3.6 Docs (<a href=3D"https://github.com=
+/requirejs/requirejs/wiki/Upgrading-to-RequireJS-2.1">upgrade info</a>)</li=
+>
+        </ul>
+
+    </div>
+
+    <div id=3D"content" style=3D"min-height: 736px;">
+<div id=3D"directory" class=3D"section">
+<h1>How to use RequireJS with jQuery</h1>
+
+<ul class=3D"index mono">
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#intro">Introducti=
+on</a><span class=3D"spacer boxFlex"></span><span class=3D"sect">=C2=A7 1</=
+span>
+    </li>
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#globalvars">Globa=
+l Functions</a><span class=3D"spacer boxFlex"></span><span class=3D"sect">=
+=C2=A7 2</span>
+    </li>
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#modulename">Modul=
+e Name</a><span class=3D"spacer boxFlex"></span><span class=3D"sect">=C2=A7=
+ 3</span>
+    </li>
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#shimconfig">Examp=
+le using shim config</a><span class=3D"spacer boxFlex"></span><span class=
+=3D"sect">=C2=A7 4</span>
+    </li>
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#cdnconfig">Exampl=
+e loading jquery from a CDN</a><span class=3D"spacer boxflex"></span><span =
+class=3D"sect">=C2=A7 5</span>
+    </li>
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#noconflictmap">Ma=
+pping Modules to use noConflict</a><span class=3D"spacer boxflex"></span><s=
+pan class=3D"sect">=C2=A7 6</span>
+    </li>
+    <li class=3D"hbox">
+        <a href=3D"https://requirejs.org/docs/jquery.html#oldexample">The p=
+revious example with a concatenated require-jquery file</a><span class=3D"s=
+pacer boxflex"></span><span class=3D"sect">=C2=A7 7</span>
+    </li>
+</ul>
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"intro" href=3D"https://requirejs.org/docs/jquery.html#intro">Int=
+roduction</a>
+<span class=3D"sectionMark">=C2=A7 1</span>
+</h2>
+
+<p>While RequireJS loads jQuery just like any other dependency, jQuery's wi=
+de use and extensive plugin ecosystem mean you'll likely have other scripts=
+ in your project that also depend on jQuery. You might approach your jQuery=
+ RequireJS configuration differently depending on whether you are starting =
+a new project or whether you are adapting existing code.</p>
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"globalvars" href=3D"https://requirejs.org/docs/jquery.html#globa=
+lvars">Global Functions</a>
+<span class=3D"sectionMark">=C2=A7 2</span>
+</h2>
+<p>jQuery registers itself as the global variables "$" and "jQuery", even w=
+hen it detects AMD/RequireJS. The AMD approach advises against the use of g=
+lobal functions, but the decision to turn off these jQuery globals hinges o=
+n whether you have non-AMD code that depends on them. jQuery has a <a href=
+=3D"http://api.jquery.com/jQuery.noConflict/">noConflict function</a> that =
+supports releasing control of the global variables and this can be automate=
+d in your requirejs.config, as we will see <a href=3D"https://requirejs.org=
+/docs/jquery.html#noconflictmap">later</a>.</p>
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"modulename" href=3D"https://requirejs.org/docs/jquery.html#modul=
+ename">Module Name</a>
+<span class=3D"sectionMark">=C2=A7 3</span>
+</h2>
+
+<p>jQuery defines <a href=3D"https://requirejs.org/docs/api.html#modulename=
+">named AMD module</a> 'jquery' (all lower case) when it detects AMD/Requir=
+eJS. To reduce confusion, we recommend using 'jquery' as the module name in=
+ your requirejs.config.
+
+</p><p>Example:</p>
+
+<pre><code class=3D"javascript">requirejs.config({
+    baseUrl: <span class=3D"string">'js/lib'</span>,
+    paths: {
+        <span class=3D"comment">// the left side is the module ID,</span>
+        <span class=3D"comment">// the right side is the path to</span>
+        <span class=3D"comment">// the jQuery file, relative to baseUrl.</s=
+pan>
+        <span class=3D"comment">// Also, the path should NOT include</span>
+        <span class=3D"comment">// the '.js' file extension. This example</=
+span>
+        <span class=3D"comment">// is using jQuery 1.9.0 located at</span>
+        <span class=3D"comment">// js/lib/jquery-1.9.0.js, relative to</spa=
+n>
+        <span class=3D"comment">// the HTML page.</span>
+        jquery: <span class=3D"string">'jquery-1.9.0'</span>
+    }
+});
+</code></pre>
+
+<p>The other (recommended) solution is to just name the file 'jquery.js' an=
+d
+    place it in the baseUrl directory. Then the above paths entry is not ne=
+eded.</p>
+
+<p>You can avoid lots of configuration lines by placing the files according=
+ to
+    the default ID-to-path convention of
+    <code>baseUrl + moduleID + '.js'</code>. The examples below show how to
+    set baseUrl to be the directory for third-party, library code, and use
+    one extra paths config for your app code.</p>
+
+<p>So to reiterate, you will likely get an error if you refer to jQuery wit=
+h another module name, like <code>'lib/jquery'</code>. <strong>This example=
+ will not work</strong>:</p>
+
+<pre><code class=3D"javascript">
+    <span class=3D"comment">// THIS WILL NOT WORK</span>
+    define([<span class=3D"string">'lib/jquery'</span>], <span class=3D"fun=
+ction"><span class=3D"keyword">function</span> <span class=3D"params">($)</=
+span> {</span>...});
+</code></pre>
+
+<p>It will not work, since jQuery registers itself with the name of 'jquery=
+' and not 'lib/jquery'. In general, explicitly naming modules in the define=
+() call are discouraged, but <a href=3D"https://github.com/requirejs/requir=
+ejs/wiki/Updating-existing-libraries#anon">jQuery has some special constrai=
+nts</a>.</p>
+
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"shimconfig" href=3D"https://requirejs.org/docs/jquery.html#shimc=
+onfig">Example using shim config</a>
+<span class=3D"sectionMark">=C2=A7 4</span>
+</h2>
+
+<p>This example shows how to use the <a href=3D"https://requirejs.org/docs/=
+api.html#config-shim">shim config</a> to specify dependencies for jQuery pl=
+ugins that do not call <a href=3D"https://requirejs.org/docs/api.html#defin=
+e">define()</a>. This example is useful if you have an existing jQuery proj=
+ect you want to convert and do not want to modify the sources of the jQuery=
+ plugins to call define().</p>
+
+<h4><a class=3D"download" href=3D"https://github.com/requirejs/example-jque=
+ry-shim">Example using jQuery with shim config</a></h4>
+
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"cdnconfig" href=3D"https://requirejs.org/docs/jquery.html#cdncon=
+fig">Example loading jquery from a CDN</a>
+<span class=3D"sectionMark">=C2=A7 5</span>
+</h2>
+
+<p>This example shows how to load and optimize your code while loading jQue=
+ry from a <a href=3D"http://en.wikipedia.org/wiki/Content_delivery_network"=
+>Content Delivery Network</a> (CDN). This example requires all your jQuery =
+plugins to call <a href=3D"https://requirejs.org/docs/api.html#define">defi=
+ne()</a> to properly express their dependencies. <a href=3D"https://require=
+js.org/docs/api.html#config-shim">Shim config</a> does not work after optim=
+ization builds with CDN resources.</p>
+
+<h4><a class=3D"download" href=3D"https://github.com/requirejs/example-jque=
+ry-cdn">Example using jQuery from a CDN</a></h4>
+
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"noconflictmap" href=3D"https://requirejs.org/docs/jquery.html#no=
+conflictmap">Mapping Modules to use noConflict</a>
+<span class=3D"sectionMark">=C2=A7 6</span>
+</h2>
+
+<p>If <strong>all of your modules</strong> (including any third party jQuer=
+y plugins or library code that depend on jQuery) are AMD compatible and you=
+ want to avoid having $ or jQuery in the global namespace when they call <c=
+ode>requirejs(['jquery'])</code>, you can use the <a href=3D"https://requir=
+ejs.org/docs/api.html#config-map">map config</a> to map the use of jQuery t=
+o a module that calls noConflict and returns that value of jQuery for the '=
+jquery' module ID.</p>
+
+<p>You can use this example with the CDN example above -- the shim example =
+will not work since shimmed libraries need a global jQuery.</p>
+
+<pre><code class=3D"javascript">requirejs.config({
+    <span class=3D"comment">// Add this map config in addition to any baseU=
+rl or</span>
+    <span class=3D"comment">// paths config you may already have in the pro=
+ject.</span>
+    map: {
+      <span class=3D"comment">// '*' means all modules will get 'jquery-pri=
+vate'</span>
+      <span class=3D"comment">// for their 'jquery' dependency.</span>
+      <span class=3D"string">'*'</span>: { <span class=3D"string">'jquery'<=
+/span>: <span class=3D"string">'jquery-private'</span> },
+
+      <span class=3D"comment">// 'jquery-private' wants the real jQuery mod=
+ule</span>
+      <span class=3D"comment">// though. If this line was not here, there w=
+ould</span>
+      <span class=3D"comment">// be an unresolvable cyclic dependency.</spa=
+n>
+      <span class=3D"string">'jquery-private'</span>: { <span class=3D"stri=
+ng">'jquery'</span>: <span class=3D"string">'jquery'</span> }
+    }
+});
+
+<span class=3D"comment">// and the 'jquery-private' module, in the</span>
+<span class=3D"comment">// jquery-private.js file:</span>
+define([<span class=3D"string">'jquery'</span>], <span class=3D"function"><=
+span class=3D"keyword">function</span> <span class=3D"params">(jq)</span> {=
+</span>
+    <span class=3D"keyword">return</span> jq.noConflict( <span class=3D"lit=
+eral">true</span> );
+});
+</code></pre>
+
+
+<p>This means that any module which uses jQuery will need to use the AMD re=
+turn value rather than depending on the global $:</p>
+
+<pre><code class=3D"javascript">
+requirejs([<span class=3D"string">'jquery'</span>], <span class=3D"function=
+"><span class=3D"keyword">function</span><span class=3D"params">( $ )</span=
+> {</span>
+    console.log( $ ) <span class=3D"comment">// OK</span>
+});
+
+requirejs([<span class=3D"string">'jquery'</span>], <span class=3D"function=
+"><span class=3D"keyword">function</span><span class=3D"params">( jq )</spa=
+n> {</span>
+    console.log( jq ) <span class=3D"comment">// OK</span>
+});
+
+requirejs([<span class=3D"string">'jquery'</span>], <span class=3D"function=
+"><span class=3D"keyword">function</span><span class=3D"params">( )</span> =
+{</span>
+    console.log( $ ) <span class=3D"comment">// UNDEFINED!</span>
+});
+</code></pre>
+
+</div>
+
+<div class=3D"section">
+<h2>
+<a name=3D"oldexample">The previous example with a concatenated require-jqu=
+ery file</a>
+<span class=3D"sectionMark">=C2=A7 7</span>
+</h2>
+<p>
+Previously, we've been pointing to an example using a special require-jquer=
+y file, which consisted of require.js and jQuery concatenated. This is no l=
+onger the recommended way to use jQuery with require.js, but if you're look=
+ing for the (no longer maintained) example, <a href=3D"https://github.com/r=
+equirejs/require-jquery">you can find require-jquery here</a>.
+</p>
+</div>
+    </div>
+    <div id=3D"footer" class=3D"mono">
+        <span class=3D"line">Latest Release: <a href=3D"https://requirejs.o=
+rg/docs/download.html">2.3.6</a></span>
+        <span class=3D"line">Code is open source: <a href=3D"https://github=
+.com/requirejs/requirejs/blob/master/LICENSE">new BSD or MIT licensed</a></=
+span>
+        <span class=3D"line">logo and web design by <a href=3D"http://andyc=
+hung.me/">Andy Chung</a> <a href=3D"https://github.com/requirejs/requirejs-=
+branding">=C2=A9 2010-2018</a></span>
+    </div>
+</div>
+
+
+
+</body></html>
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://requirejs.org/main.css
+
+@charset "utf-8";
+
+@font-face { font-family: Inconsolata; src: url("fonts/Inconsolata.ttf"); }
+
+* { box-sizing: border-box; margin: 0px; padding: 0px; }
+
+body { font-size: 12px; line-height: 21px; background-color: rgb(255, 255, =
+255); font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-serif;=
+ color: rgb(10, 10, 10); }
+
+#wrapper { margin: 0px; }
+
+#grid { position: fixed; top: 0px; left: 0px; width: 796px; background-imag=
+e: url("i/grid.png"); z-index: 100; }
+
+pre { line-height: 18px; font-size: 13px; margin: 7px 0px 21px; padding: 5p=
+x 10px; overflow: auto; background-color: rgb(250, 250, 250); border: 1px s=
+olid rgb(230, 230, 230); border-radius: 5px; box-shadow: rgba(0, 0, 0, 0.05=
+) 0px 2px 5px; }
+
+.mono { font-family: Inconsolata, "Andale Mono", Monaco, monospace; }
+
+.sans { font-family: "Helvetica Neue", Helvetica, Arial, Verdana, sans-seri=
+f; }
+
+.serif { font-family: Georgia, "Times New Roman", Times, serif; }
+
+a { color: rgb(46, 135, 221); text-decoration: none; }
+
+a:hover { text-decoration: underline; }
+
+#navBg { background-color: rgb(242, 242, 242); background-image: url("i/sha=
+dow.png"); background-position: right top; background-repeat: repeat-y; wid=
+th: 220px; position: fixed; top: 0px; left: 0px; z-index: 0; }
+
+#nav { background-image: url("i/logo.png"); background-repeat: no-repeat; b=
+ackground-position: center 10px; width: 220px; float: left; margin: 0px; pa=
+dding: 150px 20px 0px; font-size: 13px; text-shadow: rgb(255, 255, 255) 1px=
+ 1px; position: relative; z-index: 1; }
+
+#nav .homeImageLink { position: absolute; display: block; top: 10px; left: =
+0px; width: 220px; height: 138px; }
+
+#nav ul { list-style-type: none; padding: 0px; margin: 21px 0px 0px; }
+
+#nav ul li { width: 100%; }
+
+#nav ul li.version { text-align: center; color: rgb(77, 77, 77); }
+
+#nav h1 { color: rgb(77, 77, 77); text-align: center; font-size: 15px; font=
+-weight: normal; text-transform: uppercase; letter-spacing: 3px; }
+
+span.spacer { color: rgb(46, 135, 221); margin: 0px 3px 0px 5px; background=
+-image: url("i/dot.png"); background-repeat: repeat-x; background-position:=
+ left 13px; }
+
+span.icon { width: 16px; display: block; background-image: url("i/sprite.pn=
+g"); background-repeat: no-repeat; }
+
+span.icon.home { background-position: center 5px; }
+
+span.icon.start { background-position: center -27px; }
+
+span.icon.download { background-position: center -59px; }
+
+span.icon.api { background-position: center -89px; }
+
+span.icon.optimize { background-position: center -119px; }
+
+span.icon.script { background-position: center -150px; }
+
+span.icon.question { background-position: center -182px; }
+
+span.icon.requirement { background-position: center -214px; }
+
+span.icon.history { background-position: center -247px; }
+
+span.icon.help { background-position: center -279px; }
+
+span.icon.blog { background-position: center -311px; }
+
+span.icon.twitter { background-position: center -343px; }
+
+span.icon.git { background-position: center -375px; }
+
+span.icon.fork { background-position: center -407px; }
+
+#content { margin: 0px 0px 0px 220px; padding: 0px 20px; background-color: =
+rgb(255, 255, 255); font-family: Georgia, "Times New Roman", Times, serif; =
+position: relative; }
+
+#content p { padding: 7px 0px; color: rgb(51, 51, 51); font-size: 14px; }
+
+#content h1, #content h2, #content h3, #content h4, #content h5 { font-weig=
+ht: normal; padding: 21px 0px 7px; }
+
+#content h1 { font-size: 21px; }
+
+#content h2 { padding: 0px 0px 18px; margin: 0px 0px 7px; font-weight: norm=
+al; font-size: 21px; line-height: 24px; text-align: center; color: rgb(34, =
+34, 34); background-image: url("i/arrow.png"); background-repeat: no-repeat=
+; background-position: center bottom; font-family: Inconsolata, "Andale Mon=
+o", Monaco, monospace; text-transform: uppercase; letter-spacing: 2px; text=
+-shadow: rgb(255, 255, 255) 1px 1px 0px; }
+
+#content h2 a { color: rgb(34, 34, 34); }
+
+#content h2 a:hover, #content h3 a:hover, #content h4 a:hover { text-decora=
+tion: none; }
+
+span.sectionMark { display: block; color: rgb(170, 170, 170); text-shadow: =
+rgb(255, 255, 255) 1px 1px 0px; font-size: 15px; font-family: Inconsolata, =
+"Andale Mono", Monaco, monospace; }
+
+#content h3 { font-size: 17px; }
+
+#content h4 { padding-top: 0px; font-size: 15px; }
+
+#content h5 { font-size: 10px; }
+
+#content ul { list-style-type: disc; }
+
+#content ul, #content ol { color: rgb(51, 51, 51); font-size: 14px; list-st=
+yle-position: outside; margin: 7px 0px 21px; }
+
+#content ul { font-style: italic; }
+
+#content ol { border: none; list-style-position: inside; padding: 0px; font=
+-family: Georgia, "Times New Roman", Times, serif; }
+
+#content ul ul, #content ol ol { border: none; padding: 0px; margin: 0px 0p=
+x 0px 28px; }
+
+#content .section { padding: 48px 0px; background-image: url("i/line.png");=
+ background-repeat: no-repeat; background-position: center bottom; width: 5=
+76px; margin: 0px auto; }
+
+#content .section .subSection { padding: 0px 0px 0px 48px; margin: 28px 0px=
+ 0px; display: block; border-left: 2px solid rgb(221, 221, 221); }
+
+#content .section:last-child { background-image: none; }
+
+#content .note { color: rgb(34, 34, 34); background-color: rgb(255, 255, 15=
+3); padding: 5px 10px; margin: 7px 0px; display: inline-block; }
+
+#content #directory.section { background-color: rgb(255, 255, 255); width: =
+576px; }
+
+#content #directory.section ul ul ul { margin: 0px 0px 0px 48px; }
+
+#content #directory.section ul ul li { background-image: url("i/sprite.png"=
+); background-repeat: no-repeat; background-position: left -437px; padding-=
+left: 18px; font-style: normal; }
+
+#content #directory h1 { padding: 0px 0px 65px; margin: 0px 0px 14px; font-=
+weight: normal; font-size: 21px; text-align: center; text-transform: upperc=
+ase; letter-spacing: 2px; color: rgb(34, 34, 34); background-image: url("i/=
+arrow-x.png"); background-repeat: no-repeat; background-position: center bo=
+ttom; font-family: Inconsolata, "Andale Mono", Monaco, monospace; }
+
+#content ul.index { padding: 0px; background-color: transparent; border: no=
+ne; font-style: normal; font-family: Inconsolata, "Andale Mono", Monaco, mo=
+nospace; }
+
+#content ul.index li { width: 100%; font-size: 15px; color: rgb(51, 51, 51)=
+; padding: 0px 0px 7px; }
+
+#content #intro { width: 576px; margin: 0px auto; padding: 21px 0px; }
+
+#content #intro p, #content #intro h1 { font-size: 19px; line-height: 28px;=
+ color: green; letter-spacing: 2px; padding: 0px 0px 28px; }
+
+#content #intro p:last-child, #content #intro h1:last-child { padding: 0px;=
+ }
+
+#content #intro p a { color: green; text-decoration: underline; }
+
+#content .section h4 { text-align: center; }
+
+#content .section h4 a.download { display: inline-block; margin-top: 1em; }
+
+#content h4 a.download { border-radius: 5px; background-color: rgb(242, 242=
+, 242); background-image: url("i/sprite.png"), -webkit-gradient(linear, 0% =
+0%, 0% 100%, from(rgb(250, 250, 250)), to(rgb(242, 242, 242))); background-=
+position: 7px -58px, center center; background-repeat: no-repeat, no-repeat=
+; border: 1px solid rgb(204, 204, 204); color: rgb(51, 51, 51); font-size: =
+12px; margin: 0px 0px 0px 5px; padding: 0px 10px 0px 25px; text-shadow: rgb=
+(255, 255, 255) 1px 1px 0px; }
+
+#footer { color: rgb(77, 77, 77); padding: 65px 20px 20px; margin: 20px 0px=
+ 0px 220px; text-align: center; display: block; font-size: 13px; background=
+-image: url("i/arrow-x.png"); background-repeat: no-repeat; background-posi=
+tion: center top; background-color: rgb(255, 255, 255); }
+
+#footer .line { display: block; }
+
+#footer .line a { color: rgb(77, 77, 77); text-decoration: underline; }
+
+code { background-color: rgb(250, 250, 250); color: rgb(51, 51, 51); }
+
+code .comment { color: green; font-style: italic; }
+
+code .comment.preproc { color: rgb(0, 153, 153); font-style: normal; }
+
+code .comment.special { font-weight: bold; }
+
+code .keyword { color: rgb(0, 102, 153); font-weight: bold; }
+
+code .keyword.pseudo { font-weight: normal; }
+
+code .keyword.type { color: rgb(0, 119, 136); }
+
+code .operator { color: rgb(85, 85, 85); }
+
+code .operator.word { color: rgb(0, 0, 0); font-weight: bold; }
+
+code .name.builtin { color: rgb(51, 102, 102); }
+
+code .name.function { color: rgb(204, 0, 255); }
+
+code .name.class { color: rgb(0, 170, 136); font-weight: bold; }
+
+code .name.namespace { color: rgb(0, 204, 255); font-weight: bold; }
+
+code .name.exception { color: rgb(204, 0, 0); font-weight: bold; }
+
+code .name.variable { color: rgb(0, 51, 51); }
+
+code .name.constant { color: rgb(51, 102, 0); }
+
+code .name.label { color: rgb(153, 153, 255); }
+
+code .name.entity { color: rgb(153, 153, 153); font-weight: bold; }
+
+code .name.attribute { color: rgb(51, 0, 153); }
+
+code .name.tag { color: rgb(51, 0, 153); font-weight: bold; }
+
+code .name.decorator { color: rgb(153, 153, 255); }
+
+code .string { color: rgb(204, 51, 0); }
+
+code .string.doc { font-style: italic; }
+
+code .string.interpol { color: rgb(170, 0, 0); }
+
+code .string.escape { color: rgb(204, 51, 0); font-weight: bold; }
+
+code .string.regex { color: rgb(51, 170, 170); }
+
+code .string.symbol { color: rgb(255, 204, 51); }
+
+code .string.other { color: rgb(204, 51, 0); }
+
+code .number { color: rgb(255, 102, 0); }
+
+pre::-webkit-scrollbar { width: 6px; height: 6px; }
+
+pre::-webkit-scrollbar-button:start:decrement, pre::-webkit-scrollbar-butto=
+n:end:increment { display: block; height: 0px; width: 0px; }
+
+pre::-webkit-scrollbar-button:vertical:increment, pre::-webkit-scrollbar-bu=
+tton:horizontal:increment { background-color: transparent; display: block; =
+height: 0px; width: 0px; }
+
+pre::-webkit-scrollbar-track-piece { border-radius: 3px; }
+
+pre::-webkit-scrollbar-thumb:vertical { background-color: rgb(170, 170, 170=
+); border-radius: 3px; }
+
+pre::-webkit-scrollbar-thumb:horizontal { background-color: rgb(170, 170, 1=
+70); border-radius: 3px; }
+
+.hbox { display: -webkit-box; -webkit-box-orient: horizontal; -webkit-box-a=
+lign: stretch; width: 100%; }
+
+.hbox > * { -webkit-box-flex: 0; display: block; }
+
+.vbox { display: -webkit-box; -webkit-box-orient: vertical; -webkit-box-ali=
+gn: stretch; }
+
+.vbox > * { -webkit-box-flex: 0; display: block; }
+
+.spacer { -webkit-box-flex: 1; }
+
+.reverse { -webkit-box-direction: reverse; }
+
+.boxFlex0 { -webkit-box-flex: 0; }
+
+.boxFlex1, .boxFlex { -webkit-box-flex: 1; }
+
+.boxFlex2 { -webkit-box-flex: 2; }
+
+.boxGroup1 { }
+
+.boxGroup2 { }
+
+.start { -webkit-box-pack: start; }
+
+.end { -webkit-box-pack: end; }
+
+.center { -webkit-box-pack: center; }
+
+.clearfix::after { content: "."; display: block; clear: both; visibility: h=
+idden; line-height: 0; height: 0px; }
+
+html[xmlns] .clearfix { display: block; }
+
+* html .clearfix { height: 1%; }
+
+.off-canvas-button { display: none; }
+
+@media (max-width: 840px) {
+  #navBg { display: none; }
+  #navBg, #nav { background-image: none; }
+  .homeImageLink { background-image: url("i/logo.png"); }
+  #nav { left: -220px; position: fixed; display: block; height: 100%; backg=
+round-color: rgb(242, 242, 242); overflow: auto; box-shadow: rgba(0, 0, 0, =
+0.3) -20px -10px 10px -20px inset; transition: left 0.4s ease-out 0s; }
+  .off-canvas-button { background: none; border: none; position: absolute; =
+left: 15px; display: block; top: 0px; z-index: 10; width: 30px; height: 30p=
+x; cursor: pointer; transition: left 0.4s ease-out 0s; }
+  .off-canvas-button > span { color: rgb(77, 77, 77); width: 30px; position=
+: absolute; left: 0px; transition: opacity 0.4s ease-out 0s; }
+  .off-canvas-button .lines { opacity: 1; }
+  .off-canvas-button .line { border-radius: 10px; height: 4px; margin-botto=
+m: 4px; float: left; width: 100%; background-color: rgb(77, 77, 77); }
+  .off-canvas-button .cross { opacity: 0; font-size: 35px; line-height: 20p=
+x; }
+  .off-canvas-button.open { left: 230px; }
+  .off-canvas-button.open .cross { opacity: 1; }
+  .off-canvas-button.open .lines { opacity: 0; }
+  #nav.open { left: 0px; }
+  #content, #footer { margin-left: 0px; }
+  #content .section { width: 100% !important; }
+}
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/grid.png
+
+iVBORw0KGgoAAAANSUhEUgAAAxwAAAAFCAYAAADPNurGAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAE1JREFUeNrs17EJACAMAMHoGJZuYu3+rVM4gJ0TKIjcTRACgXyavZU4
+qwb8Yzw+n3sDAJ7+f7J9AgAAtwgOAABAcAAAAIIDAABgWwIMAL4oA6RbzxyIAAAAAElFTkSuQmCC
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/shadow.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAoAAAABCAIAAABol6gpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAACZJREFUeNocxLkRACAAAjDcf1NKah49U+RI2gZgX9skb9skrwADAIUn
+Gmyx+l0wAAAAAElFTkSuQmCC
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/logo.png
+
+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
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/dot.png
+
+iVBORw0KGgoAAAANSUhEUgAAAAcAAAADCAYAAABfwxXFAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAADRJREFUeNpi+P//P8Oh62/+g2h0zHT89rv/ORs+Mjx6/fk/AzoAqXj5
+7tP/f//+YegGCDAAXJg1gkUj9bMAAAAASUVORK5CYII=
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/sprite.png
+
+iVBORw0KGgoAAAANSUhEUgAAABAAAAHhCAYAAABnSj5pAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAADw5JREFUeNrsXXlwVEUa754ZEnJAIJFrCeAEMQRFkBR31kx0WZG4K1iy
+HlUcAkYXFEGBhGOLSRU5V9GtLVdxCxFrcSNSHJa4cUES5BBdFRDIBJQgwXAFxBzmIMn0fl9Pv5n3
+ZnreTND9Z+2uauZ1v+/79ff1e3nf8bofhDFGgtURhVVseP43TGuPzTvH/GksJEgZUVCFJIRaKAfC
+vibaij9MT0cRxb/cUXCaWSwW4na7CaXUcO5oThLn09oBEuBoGhOlFj6gP0hQCTRRDQTAzCXxNHj7
+SLadBgCg2BTJdINp56hgZMzNpcf+r5YPprI5YCOLzhiY/cQhR7Pthh6LTCXOzHzzHcUieZ9OOKpN
+pE02Mfz6wlXo2hEhQBgnl0llkU0aFpw4AccHQ0BZsclGN1w2D798ToLdSP53m4wvFEDYRQEoAAWg
+AH4pAOPya1bj76EV/XOD0Ugf9mBk0/G3xXrdiRUOV2t9IQGAMAekKofDdK+ZI8QJR+WPvnV+nSkA
+H4XSNcKwlGtWmROCGa280JK15Wjja2YSrIEhrVNHxjF/Ew8Hr6OX8N7xhixopckBKB2ODEsyeuKw
+r3P7KADg32wG7dO11ykfSGobuV30trLBiXjSa+Yo6cCj9g5udEcGU+EYdr1Yds3fDoJbQl5An2lo
+367YZ5VKABO2CijLth2uo83t7j2lxxsyua9ALQvgdJYF7pqF6Vy9L4LeSHipKs63ZGkuDRGXEq/G
+044E8sS4uA4444C6P+id+M8vG9YdONOUdfx8C0HH67Z+kWTWmDgyeiAXfznUQoNDEaTijbQD6gVR
+d4g+A516HigABaAAFEAYADwU9gbhxng5pH+gj5dDRXIWM/G0/IGZmkEB9AHoDQFg6oMza7mDTgNo
+bKhCZ66CLIvhyUsAkJuRo8uTaMjLOKKoiiExZxKZHBRDJGDCi525JIx7V3wewFsJYA55J6IkBDwa
+EFvKHO6tzIIxqz9nBaAAFMAvCWBE0Zmd+Hs0254ZtmUaWXRmINR4YRSnwJN0ChzthMd8PNSBpgDA
+OAx+vu3VzbZk9AtVO4jHnpBF2y4jyDxof7ti55V79Dw2P4v8PNiR5tr6tuVazIgQZScbEavIZqXX
+rZTths7boFZI5+DeV6uvXKxrTwApyO4FHol/80o1qW1oJ0N6R5AtcxIboWsz1LkGAHBpdoI/MEXn
+0uDhd1AHCPWYzlf4AOxkpmEOuC+hORQ+gQbozRMT9mn84Gg+sTIVdk7fUDPl5MUW0qtbF/LR0wOp
+MLTn4CdRqKDRfgA10wAAYq6H1h+AK1br1zL9OKGRERYyISn66ktTe98kvYxA/CIyz0+Pv55xa4zX
+W8PjZxzxpLWNkflpPaKge33Q4HvDZ3X3/NDc4YbjZegrYsVyqaF9x+GalnyGrgdjw3wvMuSR+0Co
+eOftfGrzRSYK9seLc52K3neK30z1QFEACkAB/BIBRCL+OaipPGKk5AuIo9dC5LY3nMAzB2xBgT7w
+psKwpPSLfL1kVv8ngwKMKDwDI7OPoM86Z0I8eXRUd24LS76sJ+sPfE+sYPtXTO69bvqI2KeklgkG
+XIPMU++MY4vSe5I+3ax5fWKtic/e1TMx9ebowxjLvn/CJDkPzMNR7KUZ8Tw5D+qsBMuEJr7mcHXL
+3ajW15daDcl5swRENohUOn5wjMBmHcgp3oePlLo4UI4BYRom552TE9A7uw/6/iXOvYCzldw7Eo+t
+wQBWwUSVbTtSR5vb3HtKTzRkglcxB7RaANKstFIaOjn/yFs161w1rVlM+CnoG2g0nUrO769qyqq4
+0Mphbsfk/Ng4MnqASs4rAAWgABTA/xTAEopgcLFreFKhi4UNAAx5RnsJsZIIaP3PBQAkFXGCFVDz
+dBa74Om7+mwUYCtmba85IAXQmCcO6XZQgKA0PBHxx9E9ZsHP/WBl8vdV1k+YqQOx6ERdkZbc/eBb
+0xInQDMf+8CaT8Y5jrJxsj1VOSkr05K7Hdx/sn6CJqUveod6S88IjXmlgN2UPrT7BkHSjP/sP9VQ
+LtorjHNgIfkbP71CZm6rcXCVCl1WC7g0a+/t9zg053vV5JJyNY0qVC0D8W6NO7j/lBCPkknY37Mr
+J3lHJBE8ak71qRlgVGdsPXcA3RF7YQWb8o9v39DFzQT68kQ7L1TwnYcAxy61IHGO/zl928y8EzHa
+cDMa9eesABSAAvh/B4DnP2akc0QSEo+rwUaWMjfJA+tUbQqQVOyaBM//rVBj+dtekSHHarPStuT+
+UY+//9igTVIAe6FrIDB8BYdx3Nhkp/iAC13c/nWNtLH8+/rNmJocuykw+CZkKeB5mdceuooWGlVy
+guj87XNLazvde7bxDaGaX+RKyTQqkIDJ252V1tspjC1XqexUQwT5bd+l0PGMv4fSS9AJ3RlZktaP
+5ExMILO3n3cQsR7+x5Z2pJomi51rofYX/gIXZf7EHpjVIA2k1UFE+B4b08U7mL8E7wm3xqMRmPek
+ogqPDdRRZgyJ1QYLAPizzUbbvIvmQeCq7GGk0dLqTRxERFDy7NgE32D+98EDJdUzKmuaNra1M6qt
+mtdKZKSFvPJAIrnbHoNvOe6AekZ6J26uqJ+x7+yP6z8+3dilsamddIu2Ecct3cni8fFkUFwXZH4Q
+6q5Q0bsd6joRuTPxu070K/OuABSAAlAAZgBgCzEhXwyP8TFEW43lXXEunu6eR/xnYHiWnV6Wstdo
+WBgpocjs9to1D4NuPZSwWGOiIq34SE/3j1z7MmFIEnt1Jd3R/rk9FFQYXLGtjTS1dKBxLAmInTUr
+9PEcO3np/l9Vafvk+OY1Sn0SeaTq6x+985KaFEtOXG4ljkHRgy2UNvvmmBk8kYDYWRvg3ekDyJp9
+l2vgcLibsW16cC+OoR0YqWLc3PTIlnMu7APzzhxvVLEgxedg8ESLxeNAgChRX33XlAxHfwOa5rLH
+7VGLP7x4ecfha72JZ8ci+lDUeBW0CRK/zS38dcLDcPw2Jh+AOVJTwbehwHgfBKyBe/7fl+LBO5u3
+ZNelY9z1o7650opXBbhUNYzR/kTzpIBqzzcNZG5Lx5dlrroheq647hFEloSZFxNt6SDEd73rGtoI
+MN8JrViNLjbKSorv47dAjewqTNY5FGblgqBVDxQFoAAUgAIIBwCidmdMR8RqfBMOgWcuOBROGV3Q
+9wseZs9TG4+hK3wAGH2hZ+mAtgmAkFc/v7Y6LBXAVyoFozL29kExR3Mz+nA35p3jP5AP/tNIohNo
+5aGspBQDg96wbD7S8NrNBSfYrtONh6B9DerLUFOxbq2sL8FvISBN0Mz2zE3n3b97+2y5sD7jRD7d
+m1sfs+6bd5EGjudLAXAV3Ln6NiZGJvYiF9M5HgB2YoC2Ui7UFxhe1DlOuiQAvW56FUYOiCJ//fSq
+t41eCGYwdOVPSBN0Ej8/18wX82111ZX4+04g/jicRKTRq2BIwqQmdqXRCcTl3H7l4aL4K6T2h9Z8
+sc7zL7Es8hMW4/4UaMZCzwLTW3nNvlrXuwcahur77k2N2Vs8id8XH0KdHMzN09eFEsdioXpBoQAU
+gAJQADcAkFRcyfSJiKplKZ3bHEjEp22odxNAJzcH+vInzHQcgwo8gqd+uRNdfoGJ9w6ndeoYlxdq
+B25dQ5PE7WnoI/cAAO8GAl59QbivL1AVWzDdqYjzmVuXAuHrNUNfRiacLYP+oHfA/Ekl0OVomL9U
+RLI9z0J+Ygl1K7Mg0qk/ZwWgABSAArhRALARDrANZUCaAbFkeace62BwNWYsZct2XVoUtgTekcWL
+Cc1NmJ6asBhCwJdNJQAPhTODScvY+Nggj7gWj2nY8sX3LxHP4nc5AI5M3Iwzo9i/HhhNHxqVsBgl
+QTspAMukgScE2w6RM3DoY2TtXcPesz9qQagjIH9gxoz9UB165gAAJFq66+IifdbCjFkKgGXpbh8I
+Zy6QMweE/3z1R6GLVOWkvIwTBpOJuxAyoI0ThhNabu7iMO9V4N7aQ6Pi8XoHZQ4W/vsXh1qfqAAU
+gAJQAOEVi8QuOjGGhuoMB0AWN64WsZn2OsDZKQm8BoIZQMKfA7vYLSG2NPovoQh4VSL9rq6BWRcI
+Q1+AWpLv6mq5Aq3hs3rz0noFqGWTK6YlXobKzuaaAxgXakjjZdNJ5JY5eMkFP9FpfhkZyZXNi5Al
+4H2T9Faevb2mfN+p+nQta+MW3tkTMInLJ95kVMvE9juDrD1wKv9AASgABaAAwrDO6BuEkUswtQur
+0bBACOwM5ngQZrQN/hsgGKa+KRPfC6Q+Ywv9HdBlFS8rvLZBvz0x02fJme7L+t7kg1Uz09sqG6Qq
+jNYbVqp9rY8ZgbC/8gr/bxQeMlhnOPEgA9HvSu5G5o7qQcYnRvMPJvAtCwBy6vvrpHDfFfJxZR0p
+/bqeLE+76XY4tcW3Ns9NknHoeak9yeySamKzUAcwd+EOC+Bkrj8Ng7DZiHj+Kl9F8KDRP/AtI8VX
+AQ4RbHuNKL4W2V/dxPZW1mt0yYY5AF1PasZWg0Rf0a7zF2eWnMXEDOnbU7K8EE6swsu1/nAdWbb7
+0ojBxS4btdDcMzkppN3NcpOKXcOImyxA/Ocm9EaWkwH3wbOlF/NP1rYuP1nTJF6FUN/qVigRXeiR
+JRl9m+bd2QN3WE7HSZT5BdOgHjRZm3hQ0Cj/QAEoAAWgAMKL3olfQF7BbhjA84pA28HQSQB8OQE/
+ZfY+XTcGJQoWN+LI9oIKdvebVW/K4kXTjfOYiEe9QzEHBygyMvtn+00BtNH1IyNg/r5aKYhkEmmZ
+va930pxaRP/3/bXyjI5EAmmQreuXJ+e9iQedU+VZ4OhijPkWcWCCRr+Iw7gKBIi1xa24NdPrqXj7
+DZtnqVyFogrDLpFQ/Wb/uRENp189UBSAAlAACkBi3iFOZD8JQPfU/fldnLDmoDMqBDVtnVSBqhtJ
+ASgABaAAjMWWVFQp68cPy+C2LO3js/jt1OeJtsdZDyBhxlwpfhMuXtf3MFT8BNyvifjavZlhWePH
+rJV4ovuarRnAJBOVJ3XWtFG/CAXTud+JitJEWMSE7YDaKn4/MQGMEPRY8eN8uTiJG3Si/b6TV3Eu
+SjDer7Pj5zDvGX66U9EnBZDpjIvZHLq2g2jLCY3lTQSYB7VU12n1A5ExX4S6Fuqq/wowAB5dxDPX
+2VSNAAAAAElFTkSuQmCC
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/arrow.png
+
+iVBORw0KGgoAAAANSUhEUgAAAEIAAAAKCAYAAAAAX4jpAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAV5JREFUeNpi8PX1/Q/EAQxAQAx7qIH///8TpY4JiBdwc3OvP3bsWBqR
+7CEZGNDI3A/EDtjUMAIlBMTExO5ycXHxBwcHGy1evHg/PvbEiRNVmJiYHgy1gPDz84MnDT4+vguf
+Pn0q3Lx58wF4igByPvz+/bv2wYMHzMePH9///fv3Hnzszs7OsyCDhxJGB8BAMABS+6Ojo8/DUggo
+RSgA6fsMIxhs3LjRkRHE6O7u9jp79uxWZ2dnBicnJ4bq6moGfOzk5OQh51l/f38MMR0dHYbIyEgw
+zQIqIw4dOtTKwcFxMzw8XCI/P//X379/3+FiAwNBHFR4AsuJwiFWc/zHFgBAAConGlmARD8jI6Ni
+f3//06lTp/59+/Yt27Rp0/7iYgPVPxhKgYArBcACAOgXSIEJqlaABebef//+vSeGDcQKQ7UsALr9
+PxDvB2KMKpQRKAhLNoFAvIFI9rADAAEGAPsWjq18/ELFAAAAAElFTkSuQmCC
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/line.png
+
+iVBORw0KGgoAAAANSUhEUgAAANwAAAACCAIAAAC8DCWJAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAACBJREFUeNpivHv3LsMoGAWDCTD+//9/NBRGwaACAAEGABoDBZeuTSdo
+AAAAAElFTkSuQmCC
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: image/png
+Content-Transfer-Encoding: base64
+Content-Location: https://requirejs.org/i/arrow-x.png
+
+iVBORw0KGgoAAAANSUhEUgAAADQAAAAxCAYAAACVtYpYAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJ
+bWFnZVJlYWR5ccllPAAAAzBJREFUeNrMmt1x2kAQxw+OApQOxBOPqAPsAhjjCogrSKgAXAFOBZgK
+gKGAyBVEfuUl0IFcQbIb/oJFlhQ+7kM7syMJ6fb2d7t71vnUUpB+v39Hh5+kCemcdLler7eqhkK+
+hnQYkA5JI9J78jXmey3xXIJjBJ1Sw9rAFUCoAt9VI9dogUZFchgFDzAM8KvkNg/2Y3bRzN1clTRK
+5Ch4kG1F/yc+54GWJcY4OqkvGvR9D19Ulc/NgobyAb4OK9LQpQzgS5pLt7QqQjKEHOI26SvpjPL4
+q8cJgfuewZe2SL9PJdIsCeEoSzPSJ59QEoZ9Eek3KiqRxgWG2SgbZ6OvPmDOaaPPNb7ZbFadTodz
+eELHHV0ndYO5CMgl1LUwFwO5gLoF5iogm1C3wlwNZAPKBMxNQCahTMHcDGQCyiSMEaBboEzDGAO6
+BsoGjFGgS6BswRgHOgfKJowVoCoo2zAXvZxeOR0fXmjxk1UY60A5KGUbpmw9ZFreSs6tiLYcHbnS
+TFwsPbQLGE4zV0sP7QLG5XpKu4JxBaVdwriA0q5hbENpHzA2obQvGFtQ2ieMDSjtG8Y0lK4DjEko
+XRcYU1CNCsd5v/VO7bcv2OgW599JXwhm5Ogt/YU0UPutlAjnMfV/X9SuVWHzEQZC6BBH6zAsHH2C
+UhhAHsw5dKsqdhNbJZGJRFR2uBXit1C5kwB9RsKHHukY+65JPlJFERqJyHTVfucsQOg/YNAlEG9q
+xQyBlI+xrpoXRaolIvNb1Mm7OB/g+AEDY4dAXMM/MMApAN/Ucav0gfz+V18UqXZ+xfosVpQ9zGRT
+ddwp68KQghHbS/esjxR9ZzuLU/jWE6vg50OEUDMyKjFGJJvhUtQRj0JMz8cO0y1Gn2P4l4pIrURN
+h/jGImjQyQQjEIhpMaulB4wAN1yQ8YbyIOTjHzHr9gAzFRFMsqC0yMmJaMj1ssBlAtAs3FvlT7bQ
+YcG0zXu+y7JZLsVIzBDKLNWyLX4vkhU86updHb9XeFKn3y2cAmXf8lDDb+LvzlDVRyIx6yUyMv97
+U+CwdpGOy7rQkD9fMODDshIo+0fjTkwOdZRAvMGcyF8BBgCo+VjX7sZ6LQAAAABJRU5ErkJggg==
+
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L----
+Content-Type: text/css
+Content-Transfer-Encoding: quoted-printable
+Content-Location: https://ajax.googleapis.com/ajax/libs/dojo/1.4/dojox/highlight/resources/highlight.css
+
+@charset "utf-8";
+
+.string, .function .title, .class .title, .tag .attribute .value, .css .rul=
+es .value, .preprocessor, .ruby .symbol, .ruby .instancevar, .ruby .class .=
+parent, .built_in, .sql .aggregate, .django .template_tag, .django .variabl=
+e, .smalltalk .class { color: rgb(136, 0, 0); }
+
+.comment, .java .annotation, .template_comment { color: rgb(136, 136, 136);=
+ }
+
+.number, .regexp, .javascript .literal, .smalltalk .symbol, .smalltalk .cha=
+r { color: rgb(0, 136, 0); }
+
+.javadoc, .ruby .string, .python .decorator, .django .filter .argument, .sm=
+alltalk .localvars, .smalltalk .array, .css .attr_selector, .xml .pi { colo=
+r: rgb(136, 136, 255); }
+
+.keyword, .css .id, .phpdoc, .function .title, .class .title, .vbscript .bu=
+ilt_in, .sql .aggregate, .rsl .built_in, .smalltalk .class, .xml .tag .titl=
+e { font-weight: bold; }
+------MultipartBoundary--Ba0VZzZFFZp2AsdjDoYMMf4Zpd6occqeiSCusliu6L------
